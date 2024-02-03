@@ -55,14 +55,16 @@
                         <label>Channel enabled</label>
                         <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     </field>
-                    <field id="twilio_account_sid" type="text" translate="label comment" sortOrder="20"
+                    <field id="twilio_account_sid" type="obscure" translate="label comment" sortOrder="20"
                            showInDefault="1" showInWebsite="1" showInStore="1">
                         <label>Twilio Account SID</label>
+                        <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
                         <comment>You can find this in Twilio Console.</comment>
                     </field>
-                    <field id="twilio_auth_token" type="text" translate="label comment" sortOrder="30"
+                    <field id="twilio_auth_token" type="obscure" translate="label comment" sortOrder="30"
                            showInDefault="1" showInWebsite="1" showInStore="1">
                         <label>Twilio Auth Token</label>
+                        <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
                         <comment>You can find this in Twilio Console.</comment>
                     </field>
                     <field id="twilio_phone_number" type="text" translate="label comment" sortOrder="40"
@@ -83,14 +85,16 @@
                         <label>Channel enabled</label>
                         <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     </field>
-                    <field id="twilio_account_sid" type="text" translate="label comment" sortOrder="20"
+                    <field id="twilio_account_sid" type="obscure" translate="label comment" sortOrder="20"
                            showInDefault="1" showInWebsite="1" showInStore="1">
                         <label>Twilio Account SID</label>
+                        <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
                         <comment>You can find this in Twilio Console.</comment>
                     </field>
-                    <field id="twilio_auth_token" type="text" translate="label comment" sortOrder="30"
+                    <field id="twilio_auth_token" type="obscure" translate="label comment" sortOrder="30"
                            showInDefault="1" showInWebsite="1" showInStore="1">
                         <label>Twilio Auth Token</label>
+                        <backend_model>Magento\Config\Model\Config\Backend\Encrypted</backend_model>
                         <comment>You can find this in Twilio Console.</comment>
                     </field>
                     <field id="twilio_phone_number" type="text" translate="label comment" sortOrder="40"
