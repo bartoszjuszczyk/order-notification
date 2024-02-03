@@ -17,6 +17,19 @@ To install the module:
 For information about a module installation,
 see [Enable or disable modules](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/manage-modules.html).
 
+## Usage
+
+The Juszczyk_OrderNotification module adds functionality to send notifications of order placement through various channels.
+The default channels are email, Slack, WhatsApp, SMS.
+
+## Configuration
+
+Configuration of the module is located on the Sales tab in Order Notification section.
+
+The General group has fields that allow you to enable/disable the module and to select groups of customers whose orders will be subject to sending notifications.
+
+The Channels group contains specific configuration for each channel and the ability to enable/disable them.
+
 ## Structure
 
 For information about a typical file structure of a module in Magento 2, see [Module file structure](https://developer.adobe.com/commerce/php/development/build/component-file-structure/#module-file-structure).
