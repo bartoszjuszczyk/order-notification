@@ -1,7 +1,7 @@
 {
   "name": "juszczyk/module-order-notification",
-  "version": "1.0.0",
-  "description": "N/A",
+  "version": "1.1.0",
+  "description": "Magento 2 module that send notifications when new order is placed.",
   "type": "magento2-module",
   "require": {
     "php": ">=7.4",
