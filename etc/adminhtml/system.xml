@@ -14,6 +14,12 @@
                     <label>Module Enabled</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
+                <field id="customer_groups" type="multiselect" translate="label comment" sortOrder="20" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Customer Groups</label>
+                    <source_model>Magento\Customer\Model\Customer\Source\GroupSourceInterface</source_model>
+                    <comment>Select for which customer groups notifications will be sent.</comment>
+                </field>
             </group>
             <group id="channels" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Notification Channels</label>
