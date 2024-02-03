@@ -73,12 +73,15 @@ class Notifier implements NotifierInterface
     protected function isNotificationAllowedForCustomerGroup(Order $order): bool
     {
         $customerGroupId = (int)$order->getCustomerGroupId();
-        $allowedCustomerGroups = explode(
-            ",",
-            $this->scopeConfig->getValue(
-                self::XML_PATH_ALLOWED_CUSTOMER_GROUPS,
-                ScopeInterface::SCOPE_STORE,
-                $this->storeManager->getStore()->getId()
+        $allowedCustomerGroups = array_map(
+            'intval',
+            explode(
+                ",",
+                $this->scopeConfig->getValue(
+                    self::XML_PATH_ALLOWED_CUSTOMER_GROUPS,
+                    ScopeInterface::SCOPE_STORE,
+                    $this->storeManager->getStore()->getId()
+                )
             )
         );
 
