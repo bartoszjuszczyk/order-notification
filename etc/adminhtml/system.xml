@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="order_notification" translate="label" sortOrder="1000" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <tab>sales</tab>
+            <label>Order Notification</label>
+            <resource>Juszczyk_OrderNotification::config</resource>
+            <group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enabled" type="select" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Module Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+            <group id="channels" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Notification Channels</label>
+                <group id="email" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Email</label>
+                    <field id="enabled" type="select" translate="label" sortOrder="10" showInDefault="1"
+                           showInWebsite="1" showInStore="1">
+                        <label>Channel enabled</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    </field>
+                    <field id="recipient_email_addresses" type="textarea" translate="label comment" sortOrder="20"
+                           showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Recipient email addresses</label>
+                        <comment>Comma seperated email addresses that will receive notification.</comment>
+                    </field>
+                </group>
+                <group id="slack" sortOrder="20" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Slack</label>
+                    <field id="enabled" type="select" translate="label" sortOrder="10" showInDefault="1"
+                           showInWebsite="1" showInStore="1">
+                        <label>Channel enabled</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    </field>
+                    <field id="webhook_url" type="text" translate="label" sortOrder="20" showInDefault="1"
+                           showInWebsite="1" showInStore="1">
+                        <label>Slack Webhook URL</label>
+                    </field>
+                </group>
+                <group id="sms" sortOrder="30" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>SMS</label>
+                    <field id="enabled" type="select" translate="label" sortOrder="10" showInDefault="1"
+                           showInWebsite="1" showInStore="1">
+                        <label>Channel enabled</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    </field>
+                    <field id="twilio_account_sid" type="text" translate="label comment" sortOrder="20"
+                           showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Twilio Account SID</label>
+                        <comment>You can find this in Twilio Console.</comment>
+                    </field>
+                    <field id="twilio_auth_token" type="text" translate="label comment" sortOrder="30"
+                           showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Twilio Auth Token</label>
+                        <comment>You can find this in Twilio Console.</comment>
+                    </field>
+                    <field id="twilio_phone_number" type="text" translate="label comment" sortOrder="40"
+                           showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Twilio Phone Number</label>
+                        <comment>Phone number that notification will be sent from (bought in Twilio).</comment>
+                    </field>
+                    <field id="recipient_phone_numbers" type="textarea" translate="label comment" sortOrder="50"
+                           showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Recipient phone numbers</label>
+                        <comment>Comma seperated phone numbers that will receive notification.</comment>
+                    </field>
+                </group>
+                <group id="whatsapp" sortOrder="30" translate="label" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>WhatsApp</label>
+                    <field id="enabled" type="select" translate="label" sortOrder="10" showInDefault="1"
+                           showInWebsite="1" showInStore="1">
+                        <label>Channel enabled</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    </field>
+                    <field id="twilio_account_sid" type="text" translate="label comment" sortOrder="20"
+                           showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Twilio Account SID</label>
+                        <comment>You can find this in Twilio Console.</comment>
+                    </field>
+                    <field id="twilio_auth_token" type="text" translate="label comment" sortOrder="30"
+                           showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Twilio Auth Token</label>
+                        <comment>You can find this in Twilio Console.</comment>
+                    </field>
+                    <field id="twilio_phone_number" type="text" translate="label comment" sortOrder="40"
+                           showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Twilio Phone Number</label>
+                        <comment>Phone number that notification will be sent from (bought in Twilio).</comment>
+                    </field>
+                    <field id="recipient_phone_numbers" type="textarea" translate="label comment" sortOrder="50"
+                           showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Recipient phone numbers</label>
+                        <comment>Comma seperated phone numbers that will receive notification.</comment>
+                    </field>
+                </group>
+            </group>
+        </section>
+    </system>
+</config>

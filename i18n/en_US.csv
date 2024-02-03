@@ -1,0 +1,24 @@
+"New order number %increment_id from %store_name has been placed.","New order number %increment_id from %store_name has been placed."
+"Order data:","Order data:"
+"Order number: %increment_id","Order number: %increment_id"
+"Store name: %store_name","Store name: %store_name"
+"Grand total: %grand_total","Grand total: %grand_total"
+"Order Notification","Order Notification"
+General,General
+"Module Enabled","Module Enabled"
+"Notification Channels","Notification Channels"
+Email,Email
+"Channel enabled","Channel enabled"
+"Recipient email addresses","Recipient email addresses"
+"Comma seperated email addresses that will receive notification.","Comma seperated email addresses that will receive notification."
+Slack,Slack
+"Slack Webhook URL","Slack Webhook URL"
+SMS,SMS
+"Twilio Account SID","Twilio Account SID"
+"You can find this in Twilio Console.","You can find this in Twilio Console."
+"Twilio Auth Token","Twilio Auth Token"
+"Twilio Phone Number","Twilio Phone Number"
+"Phone number that notification will be sent from (bought in Twilio).","Phone number that notification will be sent from (bought in Twilio)."
+"Recipient phone numbers","Recipient phone numbers"
+"Comma seperated phone numbers that will receive notification.","Comma seperated phone numbers that will receive notification."
+WhatsApp,WhatsApp

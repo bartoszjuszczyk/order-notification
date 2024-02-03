@@ -1,0 +1,24 @@
+"New order number %increment_id from %store_name has been placed.","Nowe zamówienie o numerze %increment_id ze sklepu %store_name zostało złożone."
+"Order data:","Informacje o zamówieniu:"
+"Order number: %increment_id","Numer zamówienia: %increment_id"
+"Store name: %store_name","Nazwa sklepu: %store_name"
+"Grand total: %grand_total","Wartość zamówienia: %grand_total"
+"Order Notification","Powiadomienie o zamówieniu"
+General,Główne
+"Module Enabled","Włączony Moduł"
+"Notification Channels","Kanały Powiadomień"
+Email,Email
+"Channel enabled","Kanał włączony"
+"Recipient email addresses","Adresy e-mail odbiorców"
+"Comma seperated email addresses that will receive notification.","Rozdzielone przecinkienm adresy e-mail, którzy otrzymają powiadomienie."
+Slack,Slack
+"Slack Webhook URL","Slack Webhook URL"
+SMS,SMS
+"Twilio Account SID","Twilio Account SID"
+"You can find this in Twilio Console.","Znajdziesz je w Twilio Console."
+"Twilio Auth Token","Twilio Auth Token"
+"Twilio Phone Number","Numer Telefonu Twilio"
+"Phone number that notification will be sent from (bought in Twilio).","Numer telefonu, z którego zostaną wysłane powiadomienia (wykupiony w Twilio)."
+"Recipient phone numbers","Numery telefonów odbiorców"
+"Comma seperated phone numbers that will receive notification.","Rozdzielione przecikiem numery telefonów, na które zostanie wysłane powiadomienie."
+WhatsApp,WhatsApp

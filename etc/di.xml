@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Juszczyk\OrderNotification\Api\NotifierInterface"
+                type="Juszczyk\OrderNotification\Model\Notifier"/>
+    <type name="Juszczyk\OrderNotification\Model\Notifier">
+        <arguments>
+            <argument xsi:type="array" name="channels">
+                <item xsi:type="object" name="email">Juszczyk\OrderNotification\Model\Channel\Email</item>
+                <item xsi:type="object" name="sms">Juszczyk\OrderNotification\Model\Channel\Sms</item>
+                <item xsi:type="object" name="slack">Juszczyk\OrderNotification\Model\Channel\Slack</item>
+                <item xsi:type="object" name="whatsapp">Juszczyk\OrderNotification\Model\Channel\WhatsApp</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

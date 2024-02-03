@@ -1,0 +1,17 @@
+<!--@subject New order  @-->
+{{template config_path="design/email/header_template"}}
+<div>
+    <p>
+        <strong>{{trans "New order number %increment_id from %store_name has been placed."
+            increment_id=$increment_id store_name=$store_name}}</strong>
+    </p>
+</div>
+<div>
+    <p>{{trans 'Order data:'}}</p>
+    <ul>
+        <li>{{trans "Order number: %increment_id" increment_id=$increment_id}}</li>
+        <li>{{trans "Store name: %store_name" store_name=$store_name}}</li>
+        <li>{{trans "Grand total: %grand_total" grand_total=$grand_total}}</li>
+    </ul>
+</div>
+{{template config_path="design/email/footer_template"}}
